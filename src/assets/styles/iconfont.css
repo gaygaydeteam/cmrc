@@ -15,8 +15,3 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-search:before { content: "\e60d"; }
-
-.icon-jiantouarrow486:before { content: "\e6aa"; }
-
-.icon-jiantou:before { content: "\e622"; }
