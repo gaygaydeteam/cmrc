@@ -1,5 +1,4 @@
 /build/
 /config/
 /dist/
-/*.js
-iconfont.js
+*.js
