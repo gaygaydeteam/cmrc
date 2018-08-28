@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import FooterTab from '../components/global/Footer'
+import FooterTab from '@/components/global/Footer'
 export default {
     name: 'Home',
     components: {

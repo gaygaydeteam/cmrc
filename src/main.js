@@ -4,10 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
+
 import './assets/styles/border.css'
 import './assets/styles/reset.css'
 import './assets/styles/iconfont.css'
-
+import './assets/styles/fonts/iconfont.js'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
