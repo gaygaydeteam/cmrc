@@ -15,3 +15,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.cmrc-saoyisao:before { content: "\e638"; }
+
+.cmrc-search:before { content: "\e60d"; }
+
+.cmrc-bussiness:before { content: "\e67f"; }
+
+.cmrc-user:before { content: "\e7ae"; }
+
+.cmrc-home:before { content: "\e7c6"; }
