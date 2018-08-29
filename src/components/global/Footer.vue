@@ -4,7 +4,7 @@
             <i class="icon-exchange iconfont cmrc-bussiness" slot="tab-icon"></i>
             交易
         </tab-bar-item>
-        <tab-bar-item id="Home" :select="selected" @change-select="changeSelect">
+        <tab-bar-item id="Home" :select="selected" @change-select="changeSelect" class='home'>
             <i class="icon-home iconfont cmrc-home" slot="tab-icon"></i>
             首页
         </tab-bar-item>
@@ -42,10 +42,10 @@ export default {
     left: 0;
     right: 0;
     display: flex;
+    height: 1.12rem;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px;
     box-shadow: 0px 0px 6px #ccc;
 }
 </style>

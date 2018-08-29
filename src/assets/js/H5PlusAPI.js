@@ -19,10 +19,10 @@ function onmarked(type, result) {
 function createBarcode() {
     if(!barcode){
         barcode = plus.barcode.create('barcode', [plus.barcode.QR], {
-            top:'0px',
-            left:'0px',
-            width: '100%',
-            height: '100%',
+            top:'0',
+            left:'0',
+            right: '0',
+			bottom: '0',
             position: 'fixed'
         });
         // barcode.onmarked = onmarked;
