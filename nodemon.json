@@ -1,4 +1,6 @@
 {
-  "watch": ["src"] // 监听src目录下文件变化
-
+  "watch": ["src"],
+  "ext": "js scss vue css",
+  "exec": "npm run build",
+  "delay": "1000"
 }
