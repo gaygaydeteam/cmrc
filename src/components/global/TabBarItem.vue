@@ -46,10 +46,8 @@ export default {
         .inner-wrapper {
             background-color: #f2562e;
             border-radius: 1000px;
+            color: #fff;
         }
     }
-}
-.is-active {
-    color: #fff;
 }
 </style>
