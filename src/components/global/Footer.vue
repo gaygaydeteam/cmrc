@@ -1,14 +1,14 @@
 <template>
     <div class="tab-bar">
-        <tab-bar-item id="tab1" :select="selected" @change-select="changeSelect">
+        <tab-bar-item id="Home" :select="selected" @change-select="changeSelect">
             <i class="icon-home iconfont cmrc-home" slot="tab-icon"></i>
             首页
         </tab-bar-item>
-        <tab-bar-item id="tab2" :select="selected" @change-select="changeSelect">
+        <tab-bar-item id="Exchange" :select="selected" @change-select="changeSelect">
             <i class="icon-exchange iconfont cmrc-bussiness" slot="tab-icon"></i>
             交易
         </tab-bar-item>
-        <tab-bar-item id="tab3" :select="selected" @change-select="changeSelect">
+        <tab-bar-item id="Me" :select="selected" @change-select="changeSelect">
             <i class="icon-my iconfont cmrc-user" slot="tab-icon"></i>
             我的
         </tab-bar-item>
@@ -24,7 +24,7 @@ export default {
     },
     data () {
         return {
-            selected: 'tab1'
+            selected: 'Home'
         }
     },
     methods: {
