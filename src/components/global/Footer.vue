@@ -1,17 +1,14 @@
 <template>
     <div class="tab-bar">
-        <tab-bar-item id="tab1">
-            <svg class="icon" aria-hidden="true">
-                <use xlink:href="#cmrc-home"></use>
-            </svg>
-            <i class="icon-home iconfont cmrc-home" slot="tab-icon"></i>
-            首页
-        </tab-bar-item>
-        <tab-bar-item id="tab2">
+        <tab-bar-item id="Exchange" :select="selected" @change-select="changeSelect">
             <i class="icon-exchange iconfont cmrc-bussiness" slot="tab-icon"></i>
             交易
         </tab-bar-item>
-        <tab-bar-item id="tab3">
+        <tab-bar-item id="Home" :select="selected" @change-select="changeSelect">
+            <i class="icon-home iconfont cmrc-home" slot="tab-icon"></i>
+            首页
+        </tab-bar-item>
+        <tab-bar-item id="Me" :select="selected" @change-select="changeSelect">
             <i class="icon-my iconfont cmrc-user" slot="tab-icon"></i>
             我的
         </tab-bar-item>
@@ -24,6 +21,16 @@ export default {
     name: 'Footer',
     components: {
         TabBarItem
+    },
+    data () {
+        return {
+            selected: 'Home'
+        }
+    },
+    methods: {
+        changeSelect (params) {
+            this.selected = params
+        }
     }
 }
 </script>
@@ -40,10 +47,5 @@ export default {
     text-align: center;
     padding: 10px;
     box-shadow: 0px 0px 6px #ccc;
-}
-.icon-home {
-    &:before {
-        content: "\e7c6";
-    }
 }
 </style>
