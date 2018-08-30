@@ -7,10 +7,12 @@
         </div>
         <ul class="sort-list">
             <li v-for="item in sortList" :key="item.id">
-                <div class="sort-img-wrapper">
-                    <img :src="item.src" />
-                </div>
-                <span class="sort-text">{{item.text}}</span>
+                <a :href="item.link">
+                    <div class="sort-img-wrapper">
+                        <img :src="item.src" />
+                    </div>
+                    <span class="sort-text">{{item.text}}</span>
+                </a>
             </li>
         </ul>
         <div class="my-account">
@@ -44,27 +46,33 @@ export default {
             sortList: [{
                 id: 1,
                 src: require('../assets/img/zhuanchu.png'),
-                text: '转出'
+                text: '转出',
+                link: '#'
             }, {
                 id: 2,
                 src: require('../assets/img/guamai.png'),
-                text: '挂卖'
+                text: '挂卖',
+                link: '#'
             }, {
                 id: 3,
                 src: require('../assets/img/shuzi.png'),
-                text: '数字资产'
+                text: '数字资产',
+                link: '#'
             }, {
                 id: 4,
                 src: require('../assets/img/zhuanru.png'),
-                text: '转入'
+                text: '转入',
+                link: '#'
             }, {
                 id: 5,
                 src: require('../assets/img/qiugou.png'),
-                text: '求购'
+                text: '求购',
+                link: '#'
             }, {
                 id: 6,
                 src: require('../assets/img/jifen.png'),
-                text: '积分兑换'
+                text: '积分兑换',
+                link: '#'
             }]
         }
     }
@@ -114,6 +122,9 @@ export default {
         flex: 1;
         margin-bottom: 0.2rem;
 
+        span {
+            color: #000;
+        }
         img {
             width: calc(100% - 1.2rem);
             margin-bottom: 0.1rem;
