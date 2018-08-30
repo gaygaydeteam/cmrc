@@ -1,19 +1,15 @@
 <template>
     <div>
         <h1>This is home page!</h1>
-        <button @click="createQRBarcode">test</button>
+        <router-link to="/qrcode">
+            <i class="icon-my iconfont cmrc-user"></i>
+        </router-link>
     </div>
 </template>
 
 <script>
-import {createBarcode} from '@/assets/js/H5PlusAPI.js'
 export default {
-    name: 'Home',
-    methods: {
-        createQRBarcode () {
-            createBarcode()
-        }
-    }
+    name: 'Home'
 }
 </script>
 

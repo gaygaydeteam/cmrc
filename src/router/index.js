@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/pages/Home'
 import Exchange from '@/pages/Exchange'
 import Me from '@/pages/Me'
-
+import Qrcode from '@/pages/Qrcode'
 Vue.use(Router)
 
 export default new Router({
@@ -22,6 +22,11 @@ export default new Router({
             path: '/me',
             name: 'Me',
             component: Me
+        },
+        {
+            path: '/qrcode',
+            name: 'Qrcode',
+            component: Qrcode
         }
     ]
 })
