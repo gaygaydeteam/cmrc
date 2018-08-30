@@ -42,7 +42,7 @@ export default {
     left: 0;
     right: 0;
     display: flex;
-    height: 1.12rem;
+    height: 1rem;
     justify-content: center;
     align-items: center;
     text-align: center;

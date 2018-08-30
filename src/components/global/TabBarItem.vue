@@ -32,14 +32,14 @@ export default {
     flex-grow: 1;
     color: #000;
     > .inner-wrapper {
-        height: 50px;
-        width: 50px;
+        height: 1rem;
+        width: 1rem;
         margin: 0 auto;
 
         .tabbar-icon-wrapper {
             display: block;
-            padding-top: 3px;
-            padding-bottom: 5px;
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
         }
     }
 }

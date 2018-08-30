@@ -14,16 +14,16 @@
         <div class="my-account">
             <list-title>我的账户</list-title>
             <div class="account-info">
-                <span class="integral">积分: 4569.26</span>
-                <span class="pocket-money">零钱: 430.74</span>
+                <span class="integral">积分: <span>4569.26</span></span>
+                <span class="pocket-money">零钱: <span>430.74</span></span>
                 <span class="view-more">查看更多<i></i></span>
             </div>
         </div>
         <div class="asset-management">
-            <list-title>我的账户</list-title>
+            <list-title>资产管理</list-title>
             <div class="management-info">
-                <span class="integral">我的购买: 2018/8/28 23:55</span>
-                <span class="pocket-money">购买数量: 300</span>
+                <span class="integral">最近购入: <span>2018/8/28 23:55</span></span>
+                <span class="pocket-money">数量: <span>300</span></span>
             </div>
         </div>
     </div>
@@ -91,6 +91,75 @@ export default {
     > img {
         width: 100%;
         height: 100%;
+    }
+}
+.sort-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    li {
+        min-width: 33.333333%;
+        text-align: center;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        margin-bottom: 0.2rem;
+
+        img {
+            width: calc(100% - 1.2rem);
+            margin-bottom: 0.1rem;
+        }
+        .sort-text {
+            font-size: 0.32rem;
+        }
+    }
+}
+.my-account,
+.asset-management {
+    padding-left: 0.6rem;
+    padding-right: 0.5rem;
+
+    .title {
+        font-size: 0.40rem;
+        margin-bottom: 0.4rem;
+        margin-top: 0.4rem;
+        display: inline-block;
+        position: relative;
+
+        &:before {
+            content: '';
+            height: 100%;
+            width: 0.1rem;
+            background-color: #f1552f;
+            position: absolute;
+            left: -0.3rem;
+            border-radius: 1000px;
+        }
+    }
+}
+.account-info,
+.management-info {
+    padding-top: 0.1rem;
+    padding-bottom: 0.4rem;
+    font-size: 0.30rem;
+
+    > span {
+        margin-right: 0.1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        > span {
+            color: #f1552f;
+        }
     }
 }
 </style>
