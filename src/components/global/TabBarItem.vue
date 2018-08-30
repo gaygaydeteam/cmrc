@@ -42,12 +42,8 @@ export default {
             padding-bottom: 5px;
         }
     }
-    &.home {
-        .inner-wrapper {
-            background-color: #f2562e;
-            border-radius: 1000px;
-            color: #fff;
-        }
-    }
+}
+.is-active {
+    color: #f2562e;
 }
 </style>
