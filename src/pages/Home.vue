@@ -72,6 +72,11 @@ export default {
 </script>
 
 <style lang="scss">
+.banner-img-wrapper {
+    img {
+        width: 100%;
+    }
+}
 .page-container {
     padding-bottom: 1.12rem;
 }
