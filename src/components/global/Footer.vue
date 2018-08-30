@@ -47,5 +47,6 @@ export default {
     align-items: center;
     text-align: center;
     box-shadow: 0px 0px 6px #ccc;
+    background-color: #fff;
 }
 </style>
