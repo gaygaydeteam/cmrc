@@ -22,10 +22,14 @@ function createBarcode() {
             top:'0',
             left:'0',
             right: '0',
-			bottom: '0',
-            position: 'fixed'
+            bottom: '0',
+            width: '100%',
+            height: '100%',
+            position: 'absolute',
+            frameColor: '#f2562e',
+            scanbarColor: '#f2562e'
         });
-        // barcode.onmarked = onmarked;
+        barcode.onmarked = onmarked;
         plus.webview.currentWebview().append(barcode);
     }
     barcode.start();

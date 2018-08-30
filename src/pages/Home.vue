@@ -1,7 +1,9 @@
 <template>
     <div class="page-container">
         <div class="banner-img-wrapper">
-            <img :src="bannerImg">
+            <router-link to="/qrcode">
+                <img :src="bannerImg">
+            </router-link>
         </div>
         <ul class="sort-list">
             <li v-for="item in sortList" :key="item.id">
@@ -30,15 +32,9 @@
 </template>
 
 <script>
-import {createBarcode} from '@/assets/js/H5PlusAPI.js'
 import ListTitle from '../components/home/ListTitle'
 export default {
     name: 'Home',
-    methods: {
-        createQRBarcode () {
-            createBarcode()
-        }
-    },
     components: {
         ListTitle
     },
