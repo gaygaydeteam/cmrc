@@ -100,8 +100,8 @@ export default {
         display: flex;
         align-items: center;
         .user-avatar {
-            width: 0.96rem;
-            height: 0.96rem;
+            width: 0.72rem;
+            height: 0.72rem;
             border-radius: 100%;
             overflow: hidden;
             img {
@@ -111,7 +111,7 @@ export default {
         }
         .username {
             margin-left: 0.2rem;
-            font-size: 0.56rem;
+            font-size: 0.4rem;
         }
     }
     .saoyisao {
