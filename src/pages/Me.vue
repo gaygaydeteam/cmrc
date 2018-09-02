@@ -1,6 +1,6 @@
 <template>
     <div>
-        <user-info></user-info>
+        <user-info><user-sub-info></user-sub-info></user-info>
         <ul class="item-list">
             <li v-for="items in itemList" :key="items.id">
                 <list-title>{{items.title}}</list-title>
@@ -22,11 +22,13 @@
 <script>
 import UserInfo from '../components/me/UserInfo'
 import ListTitle from '../components/home/ListTitle'
+import UserSubInfo from '../components/me/UserSubInfo'
 export default {
     name: 'me',
     components: {
         UserInfo,
-        ListTitle
+        ListTitle,
+        UserSubInfo
     },
     data () {
         return {
