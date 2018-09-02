@@ -27,6 +27,9 @@ export default {
             selected: 'Home'
         }
     },
+    mounted () {
+        this.selected = this.$route.name
+    },
     methods: {
         changeSelect (params) {
             this.selected = params
