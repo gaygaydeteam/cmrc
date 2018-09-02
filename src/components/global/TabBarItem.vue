@@ -44,6 +44,6 @@ export default {
     }
 }
 .is-active {
-    color: #f2562e;
+    color: $orange;
 }
 </style>

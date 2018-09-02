@@ -25,16 +25,22 @@ export default {
 
 <style lang="scss" scoped>
 .user-header {
-    background-color: #f2562e;
-    color: #fff;
+    background-color: $orange;
+    color: $white;
     padding-top: 0.2rem;
 }
 .user-avatar {
     float: left;
+    margin-right: 0.3rem;
 
     img {
         width: 1.2rem;
         height: 1.2rem;
+    }
+}
+.user-rank {
+    > span {
+        margin-left: 0.3rem;
     }
 }
 .right-info {

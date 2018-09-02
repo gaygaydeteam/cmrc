@@ -108,11 +108,11 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .item-list {
 .sort-list {
 padding-left: 0.6rem;
-background-color: #fff;
+background-color: $white;
 a {
 display: block;
 color: #000;
@@ -135,6 +135,19 @@ width: 0.48rem;
 height: 0.48rem;
 }
 
+}
+}
+.item-list /deep/ {
+.list-title-wrapper {
+background-color: $white;
+padding-top: 0.2rem;
+padding-bottom: 0.2rem;
+margin-top: 0.12rem;
+margin-bottom: 0.12rem;
+padding-left: 0.6rem;
+}
+.title {
+margin: 0;
 }
 }
 </style>

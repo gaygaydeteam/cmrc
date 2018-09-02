@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .user-sub-header {
 li {
 width: 33.333333%;
@@ -46,17 +46,17 @@ span {
 position: relative;
 z-index: 2;
 }
-.dib,
-.settlement,
-.integral {
-display: block;
-margin-bottom: 0.1rem;
-}
-&:last-child {
-&:after {
-right:0;
-}
-}
+    .dib,
+    .settlement,
+    .integral {
+    display: block;
+    margin-bottom: 0.1rem;
+    }
+    &:last-child {
+        &:after {
+        right:0;
+        }
+    }
 }
 }
 </style>

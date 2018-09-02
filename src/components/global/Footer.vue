@@ -4,7 +4,7 @@
             <i class="icon-exchange iconfont cmrc-bussiness" slot="tab-icon"></i>
             交易
         </tab-bar-item>
-        <tab-bar-item id="Home" :select="selected" @change-select="changeSelect" class='home'>
+        <tab-bar-item id="Home" :select="selected" @change-select="changeSelect">
             <i class="icon-home iconfont cmrc-home" slot="tab-icon"></i>
             首页
         </tab-bar-item>
@@ -50,6 +50,6 @@ export default {
     align-items: center;
     text-align: center;
     box-shadow: 0px 0px 6px #ccc;
-    background-color: #fff;
+    background-color: $white;
 }
 </style>

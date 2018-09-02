@@ -91,7 +91,7 @@ export default {
 .sort-list,
 .my-account,
 .asset-management {
-    background-color: #fff;
+    background-color: $white;
     margin-bottom: .2rem;
 }
 .banner-img-wrapper {

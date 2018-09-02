@@ -10,8 +10,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.list-title-wrapper {
+<style lang="scss" scoped>
 .title {
     font-size: 0.34rem;
     margin-bottom: 0.35rem;
@@ -31,19 +30,5 @@ export default {
         top: 0;
         border-radius: 1000px;
     }
-}
-}
-.item-list {
-.list-title-wrapper {
-background-color: #fff;
-padding-top: 0.2rem;
-padding-bottom: 0.2rem;
-margin-top: 0.12rem;
-margin-bottom: 0.12rem;
-padding-left: 0.6rem;
-}
-.title {
-margin: 0;
-}
 }
 </style>
