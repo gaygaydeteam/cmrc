@@ -1,9 +1,18 @@
 <template>
     <div class="page-container">
-        <div class="banner-img-wrapper">
-            <router-link to="/qrcode">
-                <img :src="bannerImg">
+        <div class="header">
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="@/assets/img/banner.jpg">
+                </div>
+                <p class="username">{{username}}</p>
+            </div>
+            <router-link to="/qrcode" class="saoyisao">
+                <i class="iconfont cmrc-saoyisao"></i>
             </router-link>
+        </div>
+        <div class="banner-img-wrapper">
+            <img :src="bannerImg">
         </div>
         <ul class="sort-list">
             <li v-for="item in sortList" :key="item.id">
@@ -42,6 +51,7 @@ export default {
     },
     data () {
         return {
+            username: '未登录',
             bannerImg: require('../assets/img/banner.jpg'),
             sortList: [{
                 id: 1,
@@ -80,6 +90,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.header {
+    display: flex;
+    background-color: #fff;
+    padding: 0.1rem 0.3rem;
+    justify-content: space-between;
+    align-items: center;
+    .user-info {
+        display: flex;
+        align-items: center;
+        .user-avatar {
+            width: 0.96rem;
+            height: 0.96rem;
+            border-radius: 100%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .username {
+            margin-left: 0.2rem;
+            font-size: 0.56rem;
+        }
+    }
+    .saoyisao {
+        .cmrc-saoyisao {
+            font-size: 0.56rem;
+            color: #F1552F;
+        }
+    }
+}
 .banner-img-wrapper {
     img {
         width: 100%;
