@@ -11,5 +11,39 @@ export default {
 </script>
 
 <style lang="scss">
+.list-title-wrapper {
+.title {
+    font-size: 0.34rem;
+    margin-bottom: 0.35rem;
+    margin-top: 0.35rem;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+    display: inline-block;
+    position: relative;
 
+    &:before {
+        content: '';
+        height: 100%;
+        width: 0.1rem;
+        background-color: #f1552f;
+        position: absolute;
+        left: -0.3rem;
+        top: 0;
+        border-radius: 1000px;
+    }
+}
+}
+.item-list {
+.list-title-wrapper {
+background-color: #fff;
+padding-top: 0.2rem;
+padding-bottom: 0.2rem;
+margin-top: 0.12rem;
+margin-bottom: 0.12rem;
+padding-left: 0.6rem;
+}
+.title {
+margin: 0;
+}
+}
 </style>

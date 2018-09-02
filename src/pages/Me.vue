@@ -109,5 +109,32 @@ export default {
 </script>
 
 <style lang="scss">
+.item-list {
+.sort-list {
+padding-left: 0.6rem;
+background-color: #fff;
+a {
+display: block;
+color: #000;
+line-height: 0.48rem;
+&:before,
+&:after {
+    content: " ";
+    display: table;
+}
+&:after {
+    clear: both;
+}
+}
+span {
+    display: block;
+}
+.icon-img {
+float: left;
+width: 0.48rem;
+height: 0.48rem;
+}
 
+}
+}
 </style>

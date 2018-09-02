@@ -79,7 +79,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .banner-img-wrapper {
     img {
         width: 100%;
@@ -138,24 +138,6 @@ export default {
 .asset-management {
     padding-left: 0.6rem;
     padding-right: 0.5rem;
-
-    .title {
-        font-size: 0.40rem;
-        margin-bottom: 0.4rem;
-        margin-top: 0.4rem;
-        display: inline-block;
-        position: relative;
-
-        &:before {
-            content: '';
-            height: 100%;
-            width: 0.1rem;
-            background-color: #f1552f;
-            position: absolute;
-            left: -0.3rem;
-            border-radius: 1000px;
-        }
-    }
 }
 .account-info,
 .management-info {

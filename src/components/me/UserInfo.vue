@@ -23,6 +23,35 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.user-header {
+    background-color: #f2562e;
+    color: #fff;
+    padding-top: 0.2rem;
+}
+.user-avatar {
+    float: left;
 
+    img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+.right-info {
+    display: inline-block;
+    font-size: 14px;
+    padding-top: 0.24rem;
+    padding-bottom: 0.24rem;
+    .user-name {
+        display: block;
+        margin-bottom: 0.2rem;
+    }
+}
+.user-info-wrapper {
+    margin-bottom: 0.2rem;
+    padding-left: 0.4rem;
+}
+.user-sub-header {
+    display: flex;
+}
 </style>
