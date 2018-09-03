@@ -53,7 +53,34 @@ export default {
     margin-bottom: 0.2rem;
     padding-left: 0.4rem;
 }
+.digital-sub-header,
 .user-sub-header {
     display: flex;
+    background-color: #f2562e;
+    margin-bottom: 0.12rem;
+    /deep/ li {
+        text-align: center;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        position: relative;
+        text-align: center;
+        padding-bottom: 0.2rem;
+        padding-top: 0.2rem;
+        &:after {
+            content:'';
+            position: absolute;
+            background-color: #000;
+            opacity: 0.2;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0.02rem;
+        }
+        span {
+            position: relative;
+            z-index: 2;
+        }
+    }
 }
 </style>

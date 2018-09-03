@@ -88,6 +88,76 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.digital-page {
+    > .digital-sub-header {
+        display: flex;
+        background-color: $white;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        margin-bottom: 0.12rem;
+        > li {
+            width: 20%;
+            text-align: center;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+        }
+    }
+}
+.digital-page {
+    > .digital-content {
+        > li {
+            margin-bottom: 0.12rem;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+            padding: 0.16rem 0 0.16rem 0.4rem;
+            background-color: $white;
+            border-radius: 0.16rem;
+            position: relative;
+            overflow: hidden;
+            &:before {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 0;
+                width: 0.12rem;
+                height: 100%;
+                background-color: $orange;
+            }
+            .title {
+                display: block;
+                margin-bottom: 0.18rem;
+                color: $orange;
+            }
+            .item-info {
+                display: flex;
 
+                > li {
+                    -webkit-box-flex: 1;
+                    -ms-flex: 1;
+                    flex: 1;
+                    width: 33.333333%;
+
+                    span {
+                        display: block;
+                        margin-bottom: 0.06rem;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                            color: #aeaeae;
+                        }
+                    }
+                    &:last-child {
+                        span {
+                            color: green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 </style>
