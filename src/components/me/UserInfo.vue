@@ -9,17 +9,13 @@
                 <span class="user-rank">级别: 金卡<span class="parent-id">推荐人: 123456</span></span>
             </div>
         </div>
-        <user-sub-info></user-sub-info>
+        <slot></slot>
     </div>
 </template>
 
 <script>
-import UserSubInfo from './UserSubInfo'
 export default {
-    name: 'UserInfo',
-    components: {
-        UserSubInfo
-    }
+    name: 'UserInfo'
 }
 </script>
 

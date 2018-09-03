@@ -7,12 +7,12 @@
         </div>
         <ul class="sort-list">
             <li v-for="item in sortList" :key="item.id">
-                <a :href="item.link">
+                <router-link :to="{ name: item.link }">
                     <div class="sort-img-wrapper">
                         <img :src="item.src" />
                     </div>
                     <span class="sort-text">{{item.text}}</span>
-                </a>
+                </router-link>
             </li>
         </ul>
         <div class="my-account">
@@ -57,7 +57,7 @@ export default {
                 id: 3,
                 src: require('../assets/img/shuzi.png'),
                 text: '数字资产',
-                link: '#'
+                link: 'Digital'
             }, {
                 id: 4,
                 src: require('../assets/img/zhuanru.png'),
