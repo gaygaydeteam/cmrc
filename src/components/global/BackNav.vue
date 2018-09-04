@@ -1,13 +1,13 @@
 <template>
     <div>
-
+        <a class="back">back</a>
     </div>
 </template>
 
 <script>
 
 export default {
-    name: 'BackNav',
+    name: 'BackNav'
 
 }
 </script>

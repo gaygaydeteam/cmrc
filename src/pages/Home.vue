@@ -7,7 +7,7 @@
                 </div>
                 <p class="username">{{username}}</p>
             </div>
-            <router-link to="/qrcode" class="saoyisao">
+            <router-link class="saoyisao" to="/qrcode">
                 <i class="iconfont cmrc-saoyisao"></i>
             </router-link>
         </div>
@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import ListTitle from '../components/home/ListTitle'
+import ListTitle from '@/components/home/ListTitle'
 export default {
     name: 'Home',
     components: {
@@ -52,39 +52,42 @@ export default {
     data () {
         return {
             username: '未登录',
-            bannerImg: require('../assets/img/banner.jpg'),
+            bannerImg: require('@/assets/img/banner.jpg'),
             sortList: [{
                 id: 1,
-                src: require('../assets/img/zhuanchu.png'),
+                src: require('@/assets/img/zhuanchu.png'),
                 text: '转出',
                 link: '#'
             }, {
                 id: 2,
-                src: require('../assets/img/guamai.png'),
+                src: require('@/assets/img/guamai.png'),
                 text: '挂卖',
                 link: '#'
             }, {
                 id: 3,
-                src: require('../assets/img/shuzi.png'),
+                src: require('@/assets/img/shuzi.png'),
                 text: '数字资产',
                 link: 'Digital'
             }, {
                 id: 4,
-                src: require('../assets/img/zhuanru.png'),
+                src: require('@/assets/img/zhuanru.png'),
                 text: '转入',
                 link: '#'
             }, {
                 id: 5,
-                src: require('../assets/img/qiugou.png'),
+                src: require('@/assets/img/qiugou.png'),
                 text: '求购',
                 link: '#'
             }, {
                 id: 6,
-                src: require('../assets/img/jifen.png'),
+                src: require('@/assets/img/jifen.png'),
                 text: '积分兑换',
                 link: '#'
             }]
         }
+    },
+    methods: {
+
     }
 }
 </script>

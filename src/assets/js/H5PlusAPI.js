@@ -1,4 +1,19 @@
 var barcode = null;
+
+function plusReady() {
+    // 注册返回按键事件
+    plus.key.addEventListener('backbutton', function() {
+        // plus.nativeUI.toast('退出');
+        console.log('back');
+        window.history.go(-1);
+    }, false);
+}
+if (window.plus) {
+    plusReady();
+} else {
+    document.addEventListener('plusready', plusReady, false);
+}
+
 // 扫码成功回调
 function onmarked(type, result) {
     var text = '未知: ';
@@ -16,7 +31,7 @@ function onmarked(type, result) {
     alert( text+result );
 }
 // 创建Barcode扫码控件
-function createBarcode() {
+function _createBarcode() {
     if(!barcode){
         barcode = plus.barcode.create('barcode', [plus.barcode.QR], {
             top:'0',
@@ -34,6 +49,7 @@ function createBarcode() {
     }
     barcode.start();
 }
+
 export {
-    createBarcode
+    _createBarcode
 }
