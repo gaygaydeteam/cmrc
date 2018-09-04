@@ -24,7 +24,7 @@
                         <td>{{item.number}}</td>
                         <td>{{item.money}}</td>
                         <td>{{item.date}}</td>
-                        <td><button class="send">出售</button></td>
+                        <td><button class="sale">出售</button></td>
                     </tr>
                 </tbody>
             </table>
@@ -86,6 +86,60 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.header-img {
+    margin-bottom: 0.2rem;
+}
+.exchange-contain {
+    background-color: $white;
+    padding-bottom: 0.3rem;
+    .btn-wrapper {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.36rem;
+        display: flex;
+        span {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            width: 50%;
+            text-align: center;
+            background-color: $orange;
+            color: $white;
+            font-weight: 300;
+            padding-top: 0.26rem;
+            padding-bottom: 0.26rem;
+            border-radius: 0.1rem;
+            &:first-child {
+                margin-right: 0.24rem;
+            }
+        }
+    }
+    .exchange-table {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        padding: 0.3rem 0.4rem 0.2rem;
+        box-shadow: 0px 0px 6px #ccc;
+        width: calc(100% - 0.6rem);
+        border-radius: 0.08rem;
 
+        th {
+            color: $orange;
+            text-align: center;
+            width: 20%;
+        }
+        th,tr {
+            line-height: 0.72rem;
+        }
+        tr {
+            text-align: center;
+        }
+        .sale {
+            background-color: $orange;
+            color: $white;
+            border-radius: 0.1rem;
+            padding: 0.06rem 0.16rem;
+            font-weight: 300;
+        }
+    }
+}
 </style>
