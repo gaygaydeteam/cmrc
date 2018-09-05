@@ -1,14 +1,14 @@
 <template>
     <div class="tab-bar">
-        <tab-bar-item id="Exchange" :select="selected" @change-select="changeSelect">
+        <tab-bar-item id="Exchange" :select="selected">
             <i class="icon-exchange iconfont cmrc-bussiness" slot="tab-icon"></i>
             交易
         </tab-bar-item>
-        <tab-bar-item id="Home" :select="selected" @change-select="changeSelect">
+        <tab-bar-item id="Home" :select="selected">
             <i class="icon-home iconfont cmrc-home" slot="tab-icon"></i>
             首页
         </tab-bar-item>
-        <tab-bar-item id="Me" :select="selected" @change-select="changeSelect">
+        <tab-bar-item id="Me" :select="selected">
             <i class="icon-my iconfont cmrc-user" slot="tab-icon"></i>
             我的
         </tab-bar-item>
@@ -22,17 +22,9 @@ export default {
     components: {
         TabBarItem
     },
-    data () {
-        return {
-            selected: 'Home'
-        }
-    },
-    mounted () {
-        this.selected = this.$route.name
-    },
-    methods: {
-        changeSelect (params) {
-            this.selected = params
+    computed: {
+        selected () {
+            return this.$route.matched[0].name
         }
     }
 }
