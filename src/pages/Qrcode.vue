@@ -2,12 +2,14 @@
     <div>
         <back-nav></back-nav>
         <h1>This is qrcode page!</h1>
+        <router-link to="./test">
+            test
+        </router-link>
     </div>
 </template>
 
 <script>
 import BackNav from '@/components/global/BackNav'
-import {_createBarcode} from '@/assets/js/H5PlusAPI.js'
 export default {
     name: 'Qrcode',
     components: {
@@ -15,7 +17,7 @@ export default {
     },
     mounted () {
         this.$nextTick(function () {
-            _createBarcode()
+            this.$h5api.createBarcode()
         })
     }
 }

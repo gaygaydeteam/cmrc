@@ -5,6 +5,8 @@ import Exchange from '@/pages/Exchange'
 import Me from '@/pages/Me'
 import Digital from '@/pages/Digital'
 import Qrcode from '@/pages/Qrcode'
+import Test from '@/pages/Test'
+
 Vue.use(Router)
 
 export default new Router({
@@ -34,6 +36,11 @@ export default new Router({
             path: '/digital',
             name: 'Digital',
             component: Digital
+        },
+        {
+            path: '/test',
+            name: 'Test',
+            component: Test
         }
     ]
 })

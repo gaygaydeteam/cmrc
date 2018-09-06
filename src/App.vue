@@ -12,16 +12,28 @@ export default {
     components: {
         FooterTab
     },
-    methods: {
-        needFooter () {
-            const noNeedFooterList = ['qrcode']
-            let path = this.$route.path
-            for (var i = 0; i < noNeedFooterList.length; i++) {
-                if (path.substr(1) === noNeedFooterList[i]) {
-                    return false
+    watch: {
+        $route (router) {
+            const canQuitPage = ['Home', 'Me', 'Exchange']
+            for (let i in canQuitPage) {
+                if (router.name === canQuitPage[i]) {
+                    this.$store.dispatch('updateIndex', 0)
+                    return
                 }
             }
-            return true
+            this.$store.dispatch('updateIndex', 1)
+        }
+    },
+    methods: {
+        needFooter () {
+            const needFooterList = ['Home', 'Me', 'Exchange']
+            let pageName = this.$route.name
+            for (let i in needFooterList) {
+                if (pageName === needFooterList[i]) {
+                    return true
+                }
+            }
+            return false
         }
     }
 }
