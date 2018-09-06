@@ -11,7 +11,6 @@ import './assets/styles/iconfont.css'
 import './assets/styles/fonts/iconfont.js'
 
 Vue.config.productionTip = false
-
 /* eslint-disable no-new */
 new Vue({
     el: '#app',

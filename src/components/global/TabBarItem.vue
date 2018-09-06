@@ -20,7 +20,6 @@ export default {
     },
     methods: {
         changeTab () {
-            this.$emit('change-select', this.id)
             this.$router.push({name: this.id})
         }
     }
